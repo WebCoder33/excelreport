@@ -1,6 +1,6 @@
 <?php
 
-namespace customit\excelreport;
+namespace wedcoder33\excelreport;
 
 use Yii;
 use Box\Spout\Common\Exception\IOException;
@@ -14,7 +14,7 @@ use Box\Spout\Writer\Style\Color;
 use yii\base\InvalidConfigException;
 use box\spout;
 use yii\queue\Queue;
-use customit\excelreport\ExcelReportHelper;
+use wedcoder33\excelreport\ExcelReportHelper;
 
 class ExcelReportModel {
 
@@ -256,7 +256,7 @@ class ExcelReportModel {
     public function initExcelWorksheet()
     {
         $this->_objWorksheet = $this->_objWriter->getCurrentSheet();
-        $this->_objWorksheet->setName(Yii::t('customit','Report'));
+        $this->_objWorksheet->setName(Yii::t('wedcoder33','Report'));
     }
 
     /**

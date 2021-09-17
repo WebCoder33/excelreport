@@ -1,10 +1,10 @@
 <?php
 
-namespace customit\excelreport;
+namespace wedcoder33\excelreport;
 
 use Yii;
 use yii\base\Widget;
-use customit\excelreport\ExcelReportHelper;
+use wedcoder33\excelreport\ExcelReportHelper;
 
 class ExcelReport extends Widget
 {

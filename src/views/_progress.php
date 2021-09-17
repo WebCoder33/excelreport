@@ -13,10 +13,10 @@ echo Html::hiddenInput('queueId', $queueId, ['id' => 'queueId']);
 </div>
 
 <div id="progress-file" style="display: none;">
-    <a href="/excelreport/report/download" target="_blank"><?= Yii::t('customit','Download last report') ?></a>
+    <a href="/excelreport/report/download" target="_blank"><?= Yii::t('wedcoder33','Download last report') ?></a>
 </div>
 <div id="reset-progress">
-    <a id="reset-progress-link" href="#"><?= Yii::t('customit','Stop generation') ?></a>
+    <a id="reset-progress-link" href="#"><?= Yii::t('wedcoder33','Stop generation') ?></a>
 </div>
 
 <script>

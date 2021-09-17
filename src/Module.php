@@ -7,7 +7,7 @@
  * @version   0.0.1
  */
 
-namespace customit\excelreport;
+namespace wedcoder33\excelreport;
 
 class Module extends \yii\base\Module
 {
@@ -19,7 +19,7 @@ class Module extends \yii\base\Module
 
     public function registerTranslations()
     {
-        \Yii::$app->i18n->translations['customit'] = [
+        \Yii::$app->i18n->translations['wedcoder33'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en-US',
             'basePath' => __DIR__ . '/messages',
