@@ -37,7 +37,7 @@ class ExcelReportModel {
     /*
      * @var string
      */
-    public $folder = '@app/runtime/export';
+    public $folder = '@admin/runtime/export';
     /*
      * @var array
      */

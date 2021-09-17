@@ -31,7 +31,6 @@ class ReportController extends Controller {
                     return false;
                 } else {
                     Yii::$app->session->remove('excel-report-progress');
-                    ob_clean();
                     return \Yii::$app->response->sendFile($file, null, ['mimeType' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']);
                 }
             } else {
