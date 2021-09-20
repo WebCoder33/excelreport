@@ -1,13 +1,6 @@
 <?php
 
-/**
- * @package   yii2-excel-report
- * @author    Zodiac163 <vm@custom-it.ru>
- * @copyright Copyright &copy; Zodiac163, custom-it.ru
- * @version   0.0.1
- */
-
-namespace webСoder33\excelreport;
+namespace webCoder33\excelreport;
 
 class Module extends \yii\base\Module
 {

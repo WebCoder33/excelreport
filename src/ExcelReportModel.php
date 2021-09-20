@@ -1,6 +1,6 @@
 <?php
 
-namespace wedcoder33\excelreport;
+namespace webCoder33\excelreport;
 
 use Yii;
 use Box\Spout\Common\Exception\IOException;
