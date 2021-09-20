@@ -7,7 +7,7 @@
  * @version   0.0.1
  */
 
-namespace wedcoder33\excelreport;
+namespace webСoder33\excelreport;
 
 class Module extends \yii\base\Module
 {

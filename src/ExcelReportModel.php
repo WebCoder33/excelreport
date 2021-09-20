@@ -14,7 +14,7 @@ use Box\Spout\Writer\Style\Color;
 use yii\base\InvalidConfigException;
 use box\spout;
 use yii\queue\Queue;
-use wedcoder33\excelreport\ExcelReportHelper;
+use webCoder33\excelreport\ExcelReportHelper;
 
 class ExcelReportModel {
 

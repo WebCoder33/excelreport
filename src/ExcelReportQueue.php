@@ -1,6 +1,6 @@
 <?php
 
-namespace wedcoder33\excelreport;
+namespace webСoder33\excelreport;
 
 use yii\base\BaseObject;
 use yii\queue\RetryableJobInterface;

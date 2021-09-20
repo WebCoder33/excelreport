@@ -1,6 +1,6 @@
 <?php
 
-namespace wedcoder33\excelreport\controllers;
+namespace webCoder33\excelreport\controllers;
 
 use Yii;
 use yii\web\Controller;

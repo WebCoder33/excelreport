@@ -18,10 +18,10 @@
     },
     "autoload": {
         "psr-4": {
-            "webcoder33\\excelreport\\": "src"
+            "webСoder33\\excelreport\\": "src"
         }
     },
     "extra": {
-        "bootstrap": "webcoder33\\excelreport\\Bootstrap"
+        "bootstrap": "webСoder33\\excelreport\\Bootstrap"
     }
 }
