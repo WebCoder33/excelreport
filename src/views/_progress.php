@@ -22,7 +22,6 @@ echo Html::hiddenInput('queueId', $queueId, ['id' => 'queueId']);
 <script>
     var timerId = setInterval(function() {
         $.post( "/excelreport/report/queue", { id: $('#queueId').val() }, function( data ) {
-            console.log(data);
             var $percent = data['progress'][0] * 100 / data['progress'][1];
             $('#reportProgress').css('width', $percent+'%').attr('aria-valuenow', $percent);
             $('#reportProgress').html(Math.floor($percent)+'%');
