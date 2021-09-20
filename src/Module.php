@@ -12,7 +12,7 @@ class Module extends \yii\base\Module
 
     public function registerTranslations()
     {
-        \Yii::$app->i18n->translations['wedcoder33'] = [
+        \Yii::$app->i18n->translations['wedCoder33'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en-US',
             'basePath' => __DIR__ . '/messages',
