@@ -256,7 +256,7 @@ class ExcelReportModel {
     public function initExcelWorksheet()
     {
         $this->_objWorksheet = $this->_objWriter->getCurrentSheet();
-        $this->_objWorksheet->setName(Yii::t('wedCoder33','Report'));
+        $this->_objWorksheet->setName('Выгрузка');
     }
 
     /**
