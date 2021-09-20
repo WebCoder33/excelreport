@@ -14,7 +14,7 @@ class Module extends \yii\base\Module
     {
         \Yii::$app->i18n->translations['wedcoder33'] = [
             'class' => 'yii\i18n\PhpMessageSource',
-            'sourceLanguage' => 'en-US',
+            'sourceLanguage' => 'ru-Ru',
             'basePath' => __DIR__ . '/messages',
         ];
     }
