@@ -7,7 +7,7 @@ use yii\base\BootstrapInterface;
 class Bootstrap implements BootstrapInterface{
     public function bootstrap($app)
     {
-        $app->setModule('excelreport', 'wedcoder33\excelreport\Module');
+        $app->setModule('excelreport', 'wedCoder33\excelreport\Module');
         Yii::$app->getModule('excelreport')->registerTranslations();
     }
 }
