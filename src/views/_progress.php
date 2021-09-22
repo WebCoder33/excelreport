@@ -21,7 +21,7 @@ echo Html::hiddenInput('queueId', $queueId, ['id' => 'queueId']);
 
 <script>
     var timerId = setInterval(function() {
-        $.post( "index.php?r=excelreport/report/queue", { id: $('#queueId').val() }, function( data ) {
+        $.post( "/index.php?r=excelreport/report/queue", { id: $('#queueId').val() }, function( data ) {
             var $percent = data['progress'][0] * 100 / data['progress'][1];
             $('#reportProgress').css('width', $percent+'%').attr('aria-valuenow', $percent);
             $('#reportProgress').html(Math.floor($percent)+'%');
@@ -39,7 +39,7 @@ echo Html::hiddenInput('queueId', $queueId, ['id' => 'queueId']);
     document.addEventListener("DOMContentLoaded", function(event) { 
         $('#reset-progress-link').click(function (e) {
             e.preventDefault();
-            $.post( "index.php?r=excelreport/report/reset", { id: $('#queueId').val() }, function( data ) {
+            $.post( "/index.php?r=excelreport/report/reset", { id: $('#queueId').val() }, function( data ) {
                 window.location.href = window.location.href;
             });
         });
