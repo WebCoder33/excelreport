@@ -13,7 +13,7 @@ echo Html::hiddenInput('queueId', $queueId, ['id' => 'queueId']);
 </div>
 
 <div id="progress-file" style="display: none;">
-    <a href="/excelreport/report/download" target="_blank">Скачать последний отчет</a>
+    <a href="/index.php?r=excelreport/report/download" target="_blank">Скачать последний отчет</a>
 </div>
 <div id="reset-progress">
     <a id="reset-progress-link" href="#">Остановить процесс</a>
@@ -21,7 +21,7 @@ echo Html::hiddenInput('queueId', $queueId, ['id' => 'queueId']);
 
 <script>
     var timerId = setInterval(function() {
-        $.post( "/excelreport/report/queue", { id: $('#queueId').val() }, function( data ) {
+        $.post( "index.php?r=excelreport/report/queue", { id: $('#queueId').val() }, function( data ) {
             var $percent = data['progress'][0] * 100 / data['progress'][1];
             $('#reportProgress').css('width', $percent+'%').attr('aria-valuenow', $percent);
             $('#reportProgress').html(Math.floor($percent)+'%');
@@ -39,7 +39,7 @@ echo Html::hiddenInput('queueId', $queueId, ['id' => 'queueId']);
     document.addEventListener("DOMContentLoaded", function(event) { 
         $('#reset-progress-link').click(function (e) {
             e.preventDefault();
-            $.post( "/excelreport/report/reset", { id: $('#queueId').val() }, function( data ) {
+            $.post( "index.php?r=excelreport/report/reset", { id: $('#queueId').val() }, function( data ) {
                 window.location.href = window.location.href;
             });
         });
