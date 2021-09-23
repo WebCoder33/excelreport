@@ -25,7 +25,7 @@ echo Html::hiddenInput('queueId', $queueId, ['id' => 'queueId']);
             var $percent = data['progress'][0] * 100 / data['progress'][1];
             $('#reportProgress').css('width', $percent+'%').attr('aria-valuenow', $percent);
             $('#reportProgress').html(Math.floor($percent)+'%');
-            if ($percent == 100) {
+            if (data['progress'][0] >= data['progress'][1]) {
                 clearInterval(timerId);
                 $('#reset-progress').hide();
                 $('#progress-file').show();
